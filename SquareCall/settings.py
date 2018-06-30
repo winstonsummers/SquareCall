@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'Stevie.apps.StevieConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
