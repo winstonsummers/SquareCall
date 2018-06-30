@@ -3,12 +3,16 @@ from django.db import models
 # Create your models here.
 
 class Calendar(models.Model):
+    title = models.CharField(max_length=100)
     date_time = models.DateTimeField()
     address = models.CharField(max_length=100)
     venue = models.CharField(max_length=100)
     description = models.TextField()
     flyer = models.ImageField(upload_to='flyers')
     event_site = models.URLField()
+
+    def __str__(self):
+        return self.title
 
 class Post(models.Model):
     #general values
@@ -20,3 +24,6 @@ class Post(models.Model):
     venue = models.CharField(max_length=100)
     #newsletter page values
     letter = models.FileField(upload_to='newsletters')
+
+    def __str__(self):
+        return self.title
