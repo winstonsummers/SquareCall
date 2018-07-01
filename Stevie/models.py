@@ -8,8 +8,8 @@ class Calendar(models.Model):
     address = models.CharField(max_length=100)
     venue = models.CharField(max_length=100)
     description = models.TextField()
-    flyer = models.ImageField(upload_to='flyers')
-    event_site = models.URLField()
+    flyer = models.ImageField(upload_to='flyers', blank=True, null=True)
+    event_site = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return self.title
@@ -20,10 +20,10 @@ class Post(models.Model):
     text = models.TextField()
     page = models.CharField(max_length=20)
     #location page values
-    address = models.CharField(max_length=100)
-    venue = models.CharField(max_length=100)
+    address = models.CharField(max_length=100, blank=True, null=True)
+    venue = models.CharField(max_length=100, blank=True, null=True)
     #newsletter page values
-    letter = models.FileField(upload_to='newsletters')
+    letter = models.FileField(upload_to='newsletters', blank=True, null=True)
 
     def __str__(self):
         return self.title
