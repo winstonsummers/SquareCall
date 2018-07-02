@@ -15,10 +15,20 @@ class Calendar(models.Model):
         return self.title
 
 class Post(models.Model):
+    HOME = 'HM'
+    VENUES = 'VN'
+    CALENDAR = 'CL'
+    NEWSLETTER = 'NL'
+    PAGE_INDEX = (
+        (HOME, 'Home'),
+        (VENUES, 'Venues'),
+        (CALENDAR, 'Calendar'),
+        (NEWSLETTER, 'Newsletter')
+    )
     #general values
     title = models.CharField(max_length=100)
     text = models.TextField()
-    page = models.CharField(max_length=20)
+    page = models.CharField(max_length=2, choices=PAGE_INDEX)
     #location page values
     address = models.CharField(max_length=100, blank=True, null=True)
     venue = models.CharField(max_length=100, blank=True, null=True)

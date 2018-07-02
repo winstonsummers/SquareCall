@@ -4,15 +4,21 @@ from django.http import HttpResponse
 from .models import Post
 # Create your views here.
 def index(request):
-    post = Post.objects.all()
+    post = Post.objects.filter(page='HM')
     context = {'post' : post,}
     return render(request, 'Stevie/index.html', context) 
 
 def venues(request):
-    return HttpResponse("This will be the venues page.")
+    post = Post.objects.filter(page='VN')
+    context = {'post' : post,}
+    return render(request, 'Stevie/index.html', context) 
 
 def calendar(request):
-    return HttpResponse("This will be the calendar page.")
+    post = Post.objects.filter(page='CL')
+    context = {'post' : post,}
+    return render(request, 'Stevie/index.html', context) 
 
 def newsletter(request):
-    return HttpResponse("This will be the newsletter page.")
+    post = Post.objects.filter(page='NL')
+    context = {'post' : post,}
+    return render(request, 'Stevie/index.html', context) 
