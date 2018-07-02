@@ -1,12 +1,23 @@
-{% if post %}
-    <ul>
-        {% for p in post %}
-            <li>
-                <h1>{{ p.title }}</h1>
-                <p>{{ p.text }}</p>
-            </li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>There isn't anything here...</p>
-{% endif %}
+{% extends 'layout.html' %}
+
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+    
+
+{% block content %}
+    
+    {% if post %}
+        <ul>
+            {% for p in post %}
+                <li>
+                    <h1>{{ p.title }}</h1>
+                    <p>{{ p.text }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>There isn't anything here...</p>
+    {% endif %}
+{% endblock content %}
