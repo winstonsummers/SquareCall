@@ -19,15 +19,19 @@ class Post(models.Model):
     VENUES = 'VN'
     CALENDAR = 'CL'
     NEWSLETTER = 'NL'
+    SIDEBAR = 'SB'
+    CONTACT_INFO = 'CI'
     PAGE_INDEX = (
         (HOME, 'Home'),
         (VENUES, 'Venues'),
         (CALENDAR, 'Calendar'),
-        (NEWSLETTER, 'Newsletter')
+        (NEWSLETTER, 'Newsletter'),
+        (SIDEBAR, 'Sidebar'),
+        (CONTACT_INFO, 'Contact Info')
     )
     #general values
-    title = models.CharField(max_length=100)
-    text = models.TextField()
+    title = models.CharField(max_length=100, blank=True, null=True)
+    text = models.TextField(blank=True, null=True)
     page = models.CharField(max_length=2, choices=PAGE_INDEX)
     #location page values
     address = models.CharField(max_length=100, blank=True, null=True)
