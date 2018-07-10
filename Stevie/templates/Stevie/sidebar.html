@@ -1,24 +1,27 @@
-<ul>
+<div>
     {% if side %}
         {% for s in side %}
-            <li>
+            <section>
                 <h3>{{ s.title }}</h3>
                 <p>{{ s.text }}</p>
-            </li>
+            </section>
         {% endfor %}
     {% else %}
-        <li style="display: none">no links</li>
+        <p style="display: none">no links</p>
     {% endif %}
     
     {% if info %}
         {% for i in info %}
-            <li>
+            <section>
                 <h3>{{ i.title }}</h3>
                 <p>{{ i.text }}</p>
-            </li>
+            </section>
         {% endfor %}
     {% else %}
-    <li style="display: none">no contact info</li>
+        <p style="display: none">no contact info</p>
     {% endif %}
-        
-</ul>
+</div>
+<br>
+<div class="foot">
+    {% include 'Stevie/footer.html' %}
+</div>
