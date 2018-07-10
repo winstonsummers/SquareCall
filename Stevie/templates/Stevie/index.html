@@ -7,15 +7,15 @@
     
 {% block content %}
     {% if post %}
-        <ul>
+        <div>
             {% for p in post %}
-                <li>
+                <section>
                     <h1>{{ p.title }}</h1>
                     <p>{{ p.text }}</p>
-                </li>
+                </section>
             {% endfor %}
-        </ul>
+        </div>
     {% else %}
-        <p>There isn't anything here...</p>
+        <p style="display: none">There isn't anything here...</p>
     {% endif %}
 {% endblock content %}

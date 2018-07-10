@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stephen Noseck {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
 </head>
 <body>
-    {% include 'Stevie/navbar.html' %}
-    {% block content %}{% endblock %}
-    {% include 'Stevie/sidebar.html' %}
-    {% include 'Stevie/footer.html' %}
+    <div class="wrapper">
+        <nav>
+            {% include 'Stevie/navbar.html' %}
+        </nav>
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+        <div class="side">
+            {% include 'Stevie/sidebar.html' %}
+        </div>
+        <div class="foot">
+            {% include 'Stevie/footer.html' %}
+        </div>
+    </div>
 </body>
 </html>

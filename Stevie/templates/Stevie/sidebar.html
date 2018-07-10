@@ -1,3 +1,24 @@
-<div>
-    <p>This is the side bar</p>
-</div>
+<ul>
+    {% if side %}
+        {% for s in side %}
+            <li>
+                <h3>{{ s.title }}</h3>
+                <p>{{ s.text }}</p>
+            </li>
+        {% endfor %}
+    {% else %}
+        <li style="display: none">no links</li>
+    {% endif %}
+    
+    {% if info %}
+        {% for i in info %}
+            <li>
+                <h3>{{ i.title }}</h3>
+                <p>{{ i.text }}</p>
+            </li>
+        {% endfor %}
+    {% else %}
+    <li style="display: none">no contact info</li>
+    {% endif %}
+        
+</ul>
