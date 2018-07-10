@@ -33,7 +33,7 @@ ul{
 @media screen and (min-width: 450px){
 	.wrapper{
 		grid-template-columns: 10% 60% 20% 5% 5%;  
-		grid-template-rows: 50px auto 15px; 
+		grid-template-rows: 50px 20px auto 15px; 
 		row-gap: 10px;
     }
     nav{
@@ -42,21 +42,21 @@ ul{
     }
     .content{
         grid-column: 2/3;
-        grid-row: 2/3;
+        grid-row: 2/4;
     }
     .side{
         grid-column: 3/4;
-        grid-row: 2/3;
+        grid-row: 3/4;
     }
     .foot{
         grid-column: 2/3;
-        grid-row: 3/4;
+        grid-row: 4/5;
     }
 }
 @media screen and (min-width: 730px){
 	.wrapper{
 		grid-template-columns: 18% 48% 16% 9% 9%;
-		grid-template-rows: 20px auto 15px;
+		grid-template-rows: 20px 20px auto 15px;
 		row-gap: 18px;
     }
     nav{
@@ -65,21 +65,21 @@ ul{
     }
     .content{
         grid-column: 2/3;
-        grid-row: 2/3;
+        grid-row: 2/4;
     }
     .side{
         grid-column: 3/4;
-        grid-row: 2/3;
+        grid-row: 3/4;
     }
     .foot{
         grid-column: 2/4;
-        grid-row: 3/4;
+        grid-row: 4/5;
     }
 }
 @media screen and (min-width: 1400px){
 	.wrapper{
 		grid-template-columns: 24% 39% 13% 12% 12%;
-		grid-template-rows: 20px auto 15px;
+		grid-template-rows: 20px 20px auto 15px;
     }
     nav{
         grid-column: 2/4;
@@ -87,21 +87,21 @@ ul{
     }
     .content{
         grid-column: 2/3;
-        grid-row: 2/3;
+        grid-row: 2/4;
     }
     .side{
         grid-column: 3/5;
-        grid-row: 2/3;
+        grid-row: 3/4;
     }
     .foot{
         grid-column: 2/4;
-        grid-row: 3/4;
+        grid-row: 4/5;
     }
 }
 @media screen and (min-width: 2000px){
 	.wrapper{
 		grid-template-columns: 24% 39% 13% 12% 12%;
-		grid-template-rows: 20px auto 15px;
+		grid-template-rows: 20px 20px auto 15px;
     }
     nav{
         grid-column: 2/4;
@@ -109,15 +109,15 @@ ul{
     }
     .content{
         grid-column: 2/3;
-        grid-row: 2/3;
+        grid-row: 2/4;
     }
     .side{
         grid-column: 3/5;
-        grid-row: 2/3;
+        grid-row: 3/4;
     }
     .foot{
         grid-column: 2/4;
-        grid-row: 3/4;
+        grid-row: 4/5;
     }
 }
 nav ul li{
