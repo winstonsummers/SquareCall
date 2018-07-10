@@ -3,7 +3,7 @@
         {% for s in side %}
             <section>
                 <h3>{{ s.title }}</h3>
-                <p>{{ s.text }}</p>
+                <p>{{ s.text|linebreaks }}</p>
             </section>
         {% endfor %}
     {% else %}
@@ -14,7 +14,7 @@
         {% for i in info %}
             <section>
                 <h3>{{ i.title }}</h3>
-                <p>{{ i.text }}</p>
+                <p>{{ i.text|linebreaks }}</p>
             </section>
         {% endfor %}
     {% else %}

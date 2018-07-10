@@ -1,8 +1,12 @@
 body {
-    background-color: #defafa7a;
+    background-color: #f2fafa;
+    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
     text-align: center;
     color: #554b55;
-    font-family: 'Crete Round', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto Slab', serif;
 }
 ul{
     list-style: none;
@@ -12,7 +16,22 @@ ul{
 .wrapper{
     display: grid;
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 400px){
+    .wrapper{
+		grid-template-columns: 1% 98% 1%;
+        grid-template-rows: 150px auto auto 15px;
+        row-gap: 5px;
+    }
+    .content{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .side{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+}
+@media screen and (min-width: 400px){
 	.wrapper{
 		grid-template-columns: 1% 98% 1%;
         grid-template-rows: 75px auto auto 15px;
@@ -26,10 +45,6 @@ ul{
         grid-column: 2/3;
         grid-row: 3/4;
     }
-    /* .foot{
-        grid-column: 2/3;
-        grid-row: 4/5;
-    } */
 }
 @media screen and (min-width: 450px){
 	.wrapper{
@@ -45,10 +60,6 @@ ul{
         grid-column: 3/4;
         grid-row: 3/4;
     }
-    /* .foot{
-        grid-column: 2/3;
-        grid-row: 4/5;
-    } */
 }
 @media screen and (min-width: 730px){
 	.wrapper{
@@ -64,10 +75,6 @@ ul{
         grid-column: 3/4;
         grid-row: 3/4;
     }
-    /* .foot{
-        grid-column: 2/4;
-        grid-row: 4/5;
-    } */
 }
 @media screen and (min-width: 1400px){
 	.wrapper{
@@ -82,10 +89,6 @@ ul{
         grid-column: 3/5;
         grid-row: 3/4;
     }
-    /* .foot{
-        grid-column: 2/4;
-        grid-row: 4/5;
-    } */
 }
 @media screen and (min-width: 2000px){
 	.wrapper{
@@ -100,10 +103,6 @@ ul{
         grid-column: 3/5;
         grid-row: 3/4;
     }
-    /* .foot{
-        grid-column: 2/4;
-        grid-row: 4/5;
-    } */
 }
 nav{
     background-color: #CB839C;
@@ -126,8 +125,31 @@ nav a{
     text-decoration: none;
     margin: 0 10px;
     color: #fff8ff;
-    font-size: x-large;
+    font-size: 24px;
     font-weight: bolder;
+}
+.Stephen{
+    font-family: 'Rouge Script', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+.Stephen p{
+    display: inline-block;
+    margin: inherit;
+}
+.Stephen img{
+    height: 35px;
+    width: auto;
+    position: relative;
+    top: 7px;
+}
+.Stephen:hover{
+    background-color: #CB839C;
+    color: #fff8ff;
+}
+.Stephen p:hover{
+    background-color: #741C35;
+    color:#F3E5EB;
 }
 .content p {
     margin: 16px;
@@ -137,9 +159,13 @@ section{
     background-color: #dfb1bc;
     margin-top: 10px;
     text-align: left;
+    overflow: auto;
 }
 section h1, h3{
     background-color: #CB839C;
+    font-weight: bold;
+    font-stretch: expanded;
+    font-style: italic;
     margin: 0;
     padding: 5px;
 }
