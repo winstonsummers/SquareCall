@@ -1,8 +1,9 @@
 body {
-    background-color: #f2fafa;
+    background-color: #e8f8ff;
     background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
+
     text-align: center;
-    color: #554b55;
+    color: #fff8ff;
     font-family: 'Roboto Condensed', sans-serif;
 }
 h1, h2, h3, h4, h5, h6{
@@ -105,7 +106,7 @@ ul{
     }
 }
 nav{
-    background-color: #CB839C;
+    background-color: #a60e35;
     border-bottom: rgba(116, 28, 53, 0.356) inset 2px;
 	position: fixed;
 	top: 0;
@@ -144,7 +145,7 @@ nav a{
     top: 7px;
 }
 .Stephen:hover{
-    background-color: #CB839C;
+    background-color: #a60e35;
     color: #fff8ff;
 }
 .Stephen p:hover{
@@ -156,13 +157,17 @@ nav a{
 }
 section{
     border: 2px solid #741C35;
-    background-color: #dfb1bc;
+    background-color: #c06f82;
+    background-image: url("./background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
     margin-top: 10px;
     text-align: left;
     overflow: auto;
 }
 section h1, h3{
-    background-color: #CB839C;
+    background-color: #a60e35;
     font-weight: bold;
     font-stretch: expanded;
     font-style: italic;
@@ -170,11 +175,12 @@ section h1, h3{
     padding: 5px;
 }
 .side section{
+    background-image: none;
     border: none;
     margin: 0;
 }
 .side div{
-    background-color: #dfb1bc;
+    background-color: #c06f82;
     border: rgba(116, 28, 53, 0.356) inset 2px;
 }
 .side p{
@@ -182,7 +188,6 @@ section h1, h3{
 }
 
 .foot p{
-    background-color: #dfb1bc;
     display: inline-block;
     margin: 3px 5px;
     font-size: small;
