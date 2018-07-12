@@ -155,13 +155,15 @@ nav a{
 .content p {
     margin: 16px;
 }
-section{
-    border: 2px solid #741C35;
-    background-color: #c06f82;
+.text{
     background-image: url("./background.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
+}
+section{
+    border: 2px solid #741C35;
+    background-color: #c06f82;
     margin-top: 10px;
     text-align: left;
     overflow: auto;

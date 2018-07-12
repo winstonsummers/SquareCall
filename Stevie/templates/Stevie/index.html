@@ -11,7 +11,9 @@
             {% for p in post %}
                 <section>
                     <h1>{{ p.title }}</h1>
-                    <p>{{ p.text|linebreaks }}</p>
+                    <div class="text">
+                        <p>{{ p.text|linebreaks }}</p>
+                    </div>
                 </section>
             {% endfor %}
         </div>
