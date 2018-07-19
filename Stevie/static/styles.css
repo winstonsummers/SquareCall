@@ -138,12 +138,6 @@ nav a{
     display: inline-block;
     margin: inherit;
 }
-.Stephen img{
-    height: 35px;
-    width: auto;
-    position: relative;
-    top: 7px;
-}
 .Stephen:hover{
     background-color: #a60e35;
     color: #fff8ff;
