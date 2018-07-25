@@ -1,13 +1,13 @@
 body {
     background-color: #e8f8ff;
     background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
-
     text-align: center;
-    color: #fff8ff;
+    color: #cfeef3;
     font-family: 'Roboto Condensed', sans-serif;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Roboto Slab', serif;
+    color: #fff8ff;
 }
 ul{
     list-style: none;
@@ -108,15 +108,19 @@ ul{
 nav{
     background-color: #a60e35;
     border-bottom: rgba(116, 28, 53, 0.356) inset 2px;
-	position: fixed;
+    position: fixed;
+    display: flex;
+    justify-content: center;
 	top: 0;
 	left: 0;
 	width: 100%;
-	text-align: center;
+    text-align: center;
+    z-index: 5;
 }
 nav li{
     display: inline-block;
-    margin: 3px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 nav a:hover{
     background-color: #741C35;
@@ -150,10 +154,7 @@ nav a{
     margin: 16px;
 }
 .text{
-    background-image: url("./background.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    z-index: 1;
 }
 section{
     border: 2px solid #741C35;
