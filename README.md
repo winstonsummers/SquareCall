@@ -24,11 +24,24 @@ When Steve and I sat down to talk about what he needed and wanted from the site,
 
 # Update
 
-As of the time I am writing this, the site is still being worked on and I hope to finish in the next few weeks
+As of the time I am writing this, the site is still being worked on and scheduled deliverable is mid to late October.
 
-Some of the things to be added:
-    A calendar
-    form to sign up for the news letter
-    added functionality for the admin
-    validations for the database
-    possibly a youtube channel for Steve to post video and stream them to the site
+# Still to do
+<ul>
+    <li>implement a calendar</li>
+    <li>form to sign up for the news letters</li>
+    <li>
+        added functionality for the admin
+        <ol>
+            <li>upload/store files (fliers and news letters)</li>
+            <li>possibly more text editing capabilities</li>
+        </ol>
+    </li>
+    <li>validations for the database</li>
+    <li>photo gallery possible a carosel on the home page</li>
+    <li>possibly a youtube channel for Steve to post video and stream them to the site</li>
+</ul>
+
+# Special Thanks!
+Goes out to <a href="https://github.com/jaderosse">Jade</a> and <a href="https://github.com/nnedevn">Nick</a> for work on the site in it's development. </br>
+Also to <a href="https://github.com/SharpCoder">Josh</a> for consulting on design.
