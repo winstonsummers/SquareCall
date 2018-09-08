@@ -120,7 +120,7 @@ nav{
 nav li{
     display: inline-block;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 nav a:hover{
     background-color: #741C35;

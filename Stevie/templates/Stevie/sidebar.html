@@ -1,4 +1,16 @@
 <div>
+    {% if cal %}
+        {% for c in cal %}
+            <section>
+                <h3>{{ c.title }}</h3>
+                
+
+            </section>
+        {% endfor %}
+    {% endif %}
+</div>
+<br>
+<div>
     {% if side %}
         {% for s in side %}
             <section>
@@ -9,7 +21,9 @@
     {% else %}
         <p style="display: none">no links</p>
     {% endif %}
-    
+</div>
+<br>
+<div>
     {% if info %}
         {% for i in info %}
             <section>

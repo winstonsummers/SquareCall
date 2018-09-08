@@ -18,16 +18,18 @@ class Post(models.Model):
     HOME = 'HM'
     VENUES = 'VN'
     CALENDAR = 'CL'
-    NEWSLETTER = 'NL'
+    ESSENSE = 'ES'
     SIDEBAR = 'SB'
     CONTACT_INFO = 'CI'
+    NEWSN_NOTES = 'NN'
     PAGE_INDEX = (
         (HOME, 'Home'),
         (VENUES, 'Venues'),
         (CALENDAR, 'Calendar'),
-        (NEWSLETTER, 'Newsletter'),
+        (ESSENSE, 'esSense'),
         (SIDEBAR, 'Sidebar'),
-        (CONTACT_INFO, 'Contact Info')
+        (CONTACT_INFO, 'Contact Info'),
+        (NEWSN_NOTES, 'NEWS\'n NOTES')
     )
     #general values
     title = models.CharField(max_length=100, blank=True, null=True)
