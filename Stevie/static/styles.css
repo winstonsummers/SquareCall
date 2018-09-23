@@ -1,13 +1,22 @@
+/* 
+    #da3939 
+    https://coolors.co/232323-3d2645-a60e35-da4167-f0eff4
+    https://coolors.co/fff8f0-da3939-dd1c1c-cee9ff-a60e35
+*/
+
 body {
-    background-color: #ebfcffe7;
-    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
+    background-color: #cee9ffd8;
+    background-image: url("./always-grey2.png");
     text-align: center;
-    color: #f0fdff;
+    color: #fff8f0;
     font-family: 'Roboto Condensed', sans-serif;
+}
+p{
+    font-size: 18px;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Roboto Slab', serif;
-    color: #fff8ff;
+    color: #fff8f0;
 }
 ul{
     list-style: none;
@@ -64,7 +73,7 @@ ul{
 }
 @media screen and (min-width: 730px){
 	.wrapper{
-		grid-template-columns: 18% 48% 16% 9% 9%;
+		grid-template-columns: 12% 58% 18% 6% 6%;
         grid-template-rows: 20px 20px auto 15px;
         row-gap: 18px;
     }
@@ -90,6 +99,10 @@ ul{
         grid-column: 3/5;
         grid-row: 3/4;
     }
+    .cal-sec{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
 }
 @media screen and (min-width: 2000px){
 	.wrapper{
@@ -103,6 +116,10 @@ ul{
     .side{
         grid-column: 3/5;
         grid-row: 3/4;
+    }
+    .cal-sec{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
     }
 }
 nav{
@@ -124,31 +141,31 @@ nav li{
 }
 nav a:hover{
     background-color: #741C35;
-    color:#F3E5EB;
+    color:#fff8f0;
 }
 nav a{
     text-decoration: none;
     margin: 0 10px;
-    color: #fff8ff;
+    color: #fff8f0;
     font-size: 24px;
     font-weight: bolder;
 }
 .Stephen{
     font-family: 'Rouge Script', cursive;
-    font-size: 30px;
     font-weight: bold;
 }
 .Stephen p{
     display: inline-block;
-    margin: inherit;
+    margin: inherit;    
+    font-size: 33px;
 }
 .Stephen:hover{
     background-color: #a60e35;
-    color: #fff8ff;
+    color: #fff8f0;
 }
 .Stephen p:hover{
     background-color: #741C35;
-    color:#F3E5EB;
+    color:#fff8f0;
 }
 .content p {
     margin: 16px;
@@ -158,7 +175,7 @@ nav a{
 }
 section{
     border: 2px solid #741C35;
-    background-color: #c06f82;
+    background-color: #d42a2a65;
     margin-top: 10px;
     text-align: left;
     overflow: auto;
@@ -177,13 +194,23 @@ section h1, h3{
     margin: 0;
 }
 .side div{
-    background-color: #c06f82;
-    border: rgba(116, 28, 53, 0.356) inset 2px;
+    border: #6b2436a2 inset 2px;
 }
 .side p{
     margin: 3px 5px;
 }
-
+.cal-title{
+    background-color: #a60e35;
+    display: grid;
+    grid-template-columns: 2fr auto 3fr;
+}
+.cal-title h1{
+    grid-column: 2;
+}
+.cal-sec p, .cal-sec a {
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .foot p{
     display: inline-block;
     margin: 3px 5px;

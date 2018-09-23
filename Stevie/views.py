@@ -14,6 +14,7 @@ def index(request):
     context = {'post' : post, 'title': '- The Website', 'side': side, 'info': info, 'cal': cal}
     return render(request, 'Stevie/index.html', context) 
 
+
 def venues(request):   
     cal = Calendar.objects.all()[:5]
     side = Post.objects.filter(page='SB')
@@ -21,6 +22,7 @@ def venues(request):
     post = Post.objects.filter(page='VN')
     context = {'post' : post, 'title': '- Where I Call', 'side': side, 'info': info, 'cal': cal}
     return render(request, 'Stevie/index.html', context) 
+
 
 def calendar(request):
     cal = Calendar.objects.all()[:5]
@@ -30,6 +32,7 @@ def calendar(request):
     context = {'post' : post, 'title': '- Calendar', 'side': side, 'info': info, 'cal': cal}
     return render(request, 'Stevie/index.html', context) 
 
+
 def essense(request):
     cal = Calendar.objects.all()[:5]
     side = Post.objects.filter(page='SB')
@@ -37,6 +40,7 @@ def essense(request):
     post = Post.objects.filter(page='ES')
     context = {'post' : post, 'title': '- esSense', 'side': side, 'info': info, 'cal': cal}
     return render(request, 'Stevie/index.html', context) 
+
 
 def newsnnotes(request):
     cal = Calendar.objects.all()[:5]

@@ -1,10 +1,24 @@
 <div>
     {% if cal %}
+        <section class="cal-title"><h1>Upcoming Events</h1></section>
         {% for c in cal %}
-            <section>
-                <h3>{{ c.title }}</h3>
-                
-
+            <section class="cal-sec">
+                {% if c.flyer %}
+                    <a href="#" style="display: none" ></a><img style="display: none" src="{{c.flyer}}" >
+                {% endif %}
+                    <span>
+                        <h3>{{ c.dateAndDay }} of {{ c.getMonth }}</h3>
+                    </span>
+                {% if c.flyer %}
+                    </a>
+                {% endif %}
+                {% if c.event_site %}
+                    <a href="{{ c.event_site }}">
+                {% endif %}
+                    <p>{{ c.title }}</p>
+                {% if c.event_site %}
+                    </a>
+                {% endif %}
             </section>
         {% endfor %}
     {% endif %}
