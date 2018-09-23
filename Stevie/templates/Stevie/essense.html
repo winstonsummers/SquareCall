@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+    
+{% block content %}
+<!--     {% if post %}
+        <div>
+            {% for p in post %}
+                <section>
+                    <h1>{{ p.title }}</h1>
+                    <div class="text">
+                        <p>{{ p.text|linebreaks }}</p>
+                    </div>
+                </section>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p style="display: none">There isn't anything here...</p>
+    {% endif %} -->
+    <form method="POST" action="/essense/">
+    {% csrf_token %}
+    <div
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Name">
+        <label>Email:</label>
+        <input type="text" name="email" placeholder="Email">
+    </div>
+    <input type="submit" value="Sign Up!">
+  </form>
+{% endblock content %}
