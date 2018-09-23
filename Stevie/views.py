@@ -18,12 +18,8 @@ def index(request):
     context = {'post' : post, 'title': '- The Website', 'side': side, 'info': info, 'cal': cal}
     return render(request, 'Stevie/index.html', context) 
 
-<<<<<<< HEAD
 
 def venues(request):   
-=======
-def venues(request):    
->>>>>>> master
     cal = Calendar.objects.all()[:5]
     side = Post.objects.filter(page='SB')
     info = Post.objects.filter(page='CI')
@@ -40,25 +36,16 @@ def calendar(request):
     context = {'post' : post, 'title': '- Calendar', 'side': side, 'info': info, 'cal': cal}
     return render(request, 'Stevie/index.html', context) 
 
-<<<<<<< HEAD
 
 def essense(request):
-<<<<<<< HEAD
     cal = Calendar.objects.all()[:5]
     side = Post.objects.filter(page='SB')
     info = Post.objects.filter(page='CI')
     post = Post.objects.filter(page='ES')
     context = {'post' : post, 'title': '- esSense', 'side': side, 'info': info, 'cal': cal}
     return render(request, 'Stevie/index.html', context) 
-=======
-# def essense(request):
-#     post = Post.objects.filter(page='ES')
-#     context = {'post' : post, 'title': '', 'side': side, 'info': info, 'cal': cal}
-#     return render(request, 'Stevie/essense.html', context) 
 
 def essense(request):
-=======
->>>>>>> master
     if request.method == 'GET':
         cal = Calendar.objects.all()[:5]
         side = Post.objects.filter(page='SB')
@@ -79,11 +66,6 @@ def essense(request):
             },
         })
         return redirect('essense')
-<<<<<<< HEAD
->>>>>>> 1efacff7e0e3fbb60fde2431acc63c4cf2edfcb5
-
-=======
->>>>>>> master
 
 def newsnnotes(request):
     cal = Calendar.objects.all()[:5]
