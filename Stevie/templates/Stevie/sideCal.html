@@ -1,0 +1,25 @@
+<section class="cal-title"><h1>Upcoming Events</h1></section>
+    {% for c in cal %}
+        <section class="cal-sec">
+            <article>    
+                {% if c.flyer %}
+                    <a href="#" style="display: none" ></a><img style="display: none" src="{{c.flyer}}" >
+                {% endif %}
+                    <span class="cal-box">
+                        <h4>{{ c.dayOfWeek }}</h4>
+                        <h3>{{ c.date_time.day}}</h3>
+                        <h4>{{ c.getMonth }}</h4>
+                    </span>
+                {% if c.flyer %}
+                    </a>
+                {% endif %}
+            </article>
+                {% if c.event_site %}
+                    <a href="{{ c.event_site }}">
+                {% endif %}
+                    <p>{{ c.title }}</p>
+                {% if c.event_site %}
+                    </a>
+                {% endif %}
+        </section>
+    {% endfor %}
