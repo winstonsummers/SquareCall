@@ -1,10 +1,15 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+import requests
 import datetime
+from mailchimp3 import MailChimp
 
 from .models import Post, Calendar
 # Create your views here.
 
+
+API_KEY = '0992de85e1ae5fcc1534597d2da7fc4d-us19'
+LIST_ID = 'f93459e3a2'
 
 def index(request):
     cal = Calendar.objects.all()[:5]
@@ -32,6 +37,7 @@ def calendar(request):
     context = {'post' : post, 'title': '- Calendar', 'side': side, 'info': info, 'cal': cal}
     return render(request, 'Stevie/index.html', context) 
 
+<<<<<<< HEAD
 
 def essense(request):
     cal = Calendar.objects.all()[:5]
@@ -40,6 +46,31 @@ def essense(request):
     post = Post.objects.filter(page='ES')
     context = {'post' : post, 'title': '- esSense', 'side': side, 'info': info, 'cal': cal}
     return render(request, 'Stevie/index.html', context) 
+=======
+# def essense(request):
+#     post = Post.objects.filter(page='ES')
+#     context = {'post' : post, 'title': '', 'side': side, 'info': info, 'cal': cal}
+#     return render(request, 'Stevie/essense.html', context) 
+
+def essense(request):
+    if request.method == 'GET':
+        post = Post.objects.filter(page='ES')
+        context = {'post' : post, 'title': '', 'side': side, 'info': info, 'cal': cal}
+        #if get, show past newsletters
+        return render(request, 'Stevie/essense.html', context)
+    elif request.method == 'POST':
+        emailer = request.POST.get('name')
+        email = request.POST.get('email')
+        client = MailChimp(mc_api=API_KEY)
+        client.lists.members.create(LIST_ID, {
+            'email_address': email,
+            'status': 'subscribed',
+            'merge_fields': {
+                'FNAME': emailer,
+            },
+        })
+        return redirect('essense')
+>>>>>>> 1efacff7e0e3fbb60fde2431acc63c4cf2edfcb5
 
 
 def newsnnotes(request):

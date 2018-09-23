@@ -5,10 +5,10 @@
 */
 
 body {
-    background-color: #cee9ffd8;
+    background-color: #f0f0ee;
     background-image: url("./always-grey2.png");
     text-align: center;
-    color: #fff8f0;
+    color: #313a32;
     font-family: 'Roboto Condensed', sans-serif;
 }
 p{
@@ -40,6 +40,10 @@ ul{
         grid-column: 2/3;
         grid-row: 3/4;
     }
+    .cal-sec{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
 }
 @media screen and (min-width: 400px){
 	.wrapper{
@@ -54,6 +58,10 @@ ul{
     .side{
         grid-column: 2/3;
         grid-row: 3/4;
+    }
+    .cal-sec{
+        display: grid;
+        grid-template-columns: auto 1fr;
     }
 }
 @media screen and (min-width: 450px){
@@ -70,6 +78,10 @@ ul{
         grid-column: 3/4;
         grid-row: 3/4;
     }
+    .cal-sec{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
 }
 @media screen and (min-width: 730px){
 	.wrapper{
@@ -84,6 +96,10 @@ ul{
     .side{
         grid-column: 3/4;
         grid-row: 3/4;
+    }
+    .cal-sec{
+        display: grid;
+        grid-template-columns: auto 1fr;
     }
 }
 @media screen and (min-width: 1400px){
@@ -101,7 +117,7 @@ ul{
     }
     .cal-sec{
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: auto 1fr;
     }
 }
 @media screen and (min-width: 2000px){
@@ -119,7 +135,7 @@ ul{
     }
     .cal-sec{
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: auto 1fr;
     }
 }
 nav{
@@ -175,12 +191,12 @@ nav a{
 }
 section{
     border: 2px solid #741C35;
-    background-color: #d42a2a65;
+    background-color: #5f8a7c62;
     margin-top: 10px;
     text-align: left;
     overflow: auto;
 }
-section h1, h3{
+section h1, h3, h4{
     background-color: #a60e35;
     font-weight: bold;
     font-stretch: expanded;
@@ -210,6 +226,14 @@ section h1, h3{
 .cal-sec p, .cal-sec a {
     margin-top: auto;
     margin-bottom: auto;
+}
+article{
+    background-color: #a60e35;
+    border: 3px solid black;
+}
+article *{
+    margin: 0 3px;
+    padding: 0;
 }
 .foot p{
     display: inline-block;

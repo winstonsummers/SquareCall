@@ -12,7 +12,7 @@ class Calendar(models.Model):
     event_site = models.URLField(blank=True, null=True)
 
     def getMonth(self):
-        return self.date_time.strftime('%B')
+        return self.date_time.strftime('%b')
 
     def dayOfWeek(self):
         return self.date_time.strftime('%a')
