@@ -11,6 +11,15 @@ class Calendar(models.Model):
     flyer = models.ImageField(upload_to='flyers', blank=True, null=True)
     event_site = models.URLField(blank=True, null=True)
 
+    def getMonth(self):
+        return self.date_time.strftime('%b')
+
+    def dayOfWeek(self):
+        return self.date_time.strftime('%a')
+
+    def dateAndDay(self):
+        return self.dayOfWeek() + " " + str(self.date_time.day)
+
     def __str__(self):
         return self.title
 
