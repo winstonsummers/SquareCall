@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "endblock"
-    ]
+    ],
+    "python.linting.enabled": false
 }
