@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+    
+{% block content %}
+    <div>
+        {% if post %}
+            {% for p in post %}
+                <section>
+                    <h1>{{ p.title }}</h1>
+                    <div class="text">
+                        <p>{{ p.text|linebreaks }}</p>
+                    </div>
+                </section>
+            {% endfor %}
+        {% else %}
+            <p style="display: none">There isn't anything here...</p>
+        {% endif %}
+        <section>
+            <h1>Sign Up</h1>
+            <div class="sign-up-wrapper">
+                <form method="POST" action="/essense/" class="sign-up-form">
+                    {% csrf_token %}
+                    <div>
+                        <label>Your Name:</label>
+                    </div>
+                    <div>
+                        <input type="text" name="name" placeholder="Dancer">
+                    </div>
+                    <div style="margin-top:8px">
+                        <label>And Email:</label>
+                    </div>
+                    <div>
+                        <input type="text" name="email" placeholder="Dancer@SquareDance.com">
+                    </div>
+                    <div style="margin-top: 8px;">
+                        <input type="submit" value="Sign Up">
+                    </div>
+                </form>
+                <div class="sign-up-text">
+                    <p>
+                        Here you can sign up to recieve this news letter via email. I update and distribute these news letter myself so I can confidently say you will enjoy their contents. All you need is a name and an email!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock content %}

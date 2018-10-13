@@ -38,14 +38,6 @@ def calendar(request):
 
 
 def essense(request):
-    cal = Calendar.objects.all()[:5]
-    side = Post.objects.filter(page='SB')
-    info = Post.objects.filter(page='CI')
-    post = Post.objects.filter(page='ES')
-    context = {'post' : post, 'title': '- esSense', 'side': side, 'info': info, 'cal': cal}
-    return render(request, 'Stevie/index.html', context) 
-
-def essense(request):
     if request.method == 'GET':
         cal = Calendar.objects.all()[:5]
         side = Post.objects.filter(page='SB')
@@ -53,7 +45,7 @@ def essense(request):
         post = Post.objects.filter(page='ES')
         context = {'post' : post, 'title': '', 'side': side, 'info': info, 'cal': cal}
         #if get, show past newsletters
-        return render(request, 'Stevie/essense.html', context)
+        return render(request, 'Stevie/letterIndex.html', context)
     elif request.method == 'POST':
         emailer = request.POST.get('name')
         email = request.POST.get('email')
@@ -73,4 +65,4 @@ def newsnnotes(request):
     info = Post.objects.filter(page='CI')
     post = Post.objects.filter(page='NN')
     context = {'post' : post, 'title': '- NEWS\'n NOTES', 'side': side, 'info': info, 'cal': cal}
-    return render(request, 'Stevie/index.html', context)
+    return render(request, 'Stevie/letterIndex.html', context)
