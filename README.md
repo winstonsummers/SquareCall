@@ -25,8 +25,10 @@ When Steve and I sat down to talk about what he needed and wanted from the site,
 
 As of the time I am writing this, the site is still being worked on and scheduled deliverable is mid to late October.
 
-## Completed from Todo list
+### Completed from Todo list
 - form to sign up for the news letters
+- added functionality for the admin
+    1. add filters to admin views
 
 
 # Still to do
