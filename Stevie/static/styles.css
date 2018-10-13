@@ -5,7 +5,7 @@
 */
 
 body {
-    background-color: #f0f0ee;
+    background-color: #e3e5e9;
     background-image: url("./always-grey2.png");
     text-align: center;
     color: #313a32;
@@ -42,7 +42,7 @@ ul{
     }
     .cal-sec{
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 50px 1fr;
     }
 }
 @media screen and (min-width: 400px){
@@ -61,10 +61,10 @@ ul{
     }
     .cal-sec{
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 50px 1fr;
     }
 }
-@media screen and (min-width: 450px){
+/* @media screen and (min-width: 690px){
 	.wrapper{
 		grid-template-columns: 10% 60% 20% 5% 5%;  
 		grid-template-rows: 50px 20px auto 15px; 
@@ -80,10 +80,10 @@ ul{
     }
     .cal-sec{
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 45px 1fr;
     }
-}
-@media screen and (min-width: 730px){
+} */
+@media screen and (min-width: 767px){
 	.wrapper{
 		grid-template-columns: 12% 58% 18% 6% 6%;
         grid-template-rows: 20px 20px auto 15px;
@@ -99,12 +99,12 @@ ul{
     }
     .cal-sec{
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 50px 1fr;
     }
 }
 @media screen and (min-width: 1400px){
 	.wrapper{
-		grid-template-columns: 24% 39% 13% 12% 12%;
+		grid-template-columns: 20% 39% 13% 12% 16%;
         grid-template-rows: 20px 20px auto 15px;
     }
     .content{
@@ -115,14 +115,10 @@ ul{
         grid-column: 3/5;
         grid-row: 3/4;
     }
-    .cal-sec{
-        display: grid;
-        grid-template-columns: auto 1fr;
-    }
 }
 @media screen and (min-width: 2000px){
 	.wrapper{
-		grid-template-columns: 24% 39% 13% 12% 12%;
+		grid-template-columns: 20% 39% 13% 12% 16%;
 		grid-template-rows: 20px 20px auto 15px;
     }
     .content{
@@ -132,10 +128,6 @@ ul{
     .side{
         grid-column: 3/5;
         grid-row: 3/4;
-    }
-    .cal-sec{
-        display: grid;
-        grid-template-columns: auto 1fr;
     }
 }
 nav{
@@ -191,7 +183,7 @@ nav a{
 }
 section{
     border: 2px solid #741C35;
-    background-color: #5f8a7c62;
+    background-color: #9eacda1e;
     margin-top: 10px;
     text-align: left;
     overflow: auto;
@@ -229,7 +221,9 @@ section h1, h3, h4{
 }
 article{
     background-color: #a60e35;
-    border: 3px solid black;
+    border: #6b2436a2 inset 2px;
+    border-left: none;
+    border-bottom: none;
 }
 article *{
     margin: 0 3px;
