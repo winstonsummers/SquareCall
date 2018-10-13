@@ -4,12 +4,11 @@ A portfolio for Stephen Noseck
 Stephen is a professional square dance caller from the greater Seattle area.
 
 # Tech Used
-<ul>
-<li>Python</li>
-<li>Django</li>
-<li>CSS Grid</li>
-<li>Flexbox</li>
-</ul> 
+- Python
+- Django
+- CSS Grid
+- Flexbox
+- MailChimp API
 
 # Reasons for Development Decisions
 
@@ -27,20 +26,14 @@ When Steve and I sat down to talk about what he needed and wanted from the site,
 As of the time I am writing this, the site is still being worked on and scheduled deliverable is mid to late October.
 
 # Still to do
-<ul>
-    <li>implement a calendar</li>
-    <li>form to sign up for the news letters</li>
-    <li>
-        added functionality for the admin
-        <ol>
-            <li>upload/store files (fliers and news letters)</li>
-            <li>possibly more text editing capabilities</li>
-        </ol>
-    </li>
-    <li>validations for the database</li>
-    <li>photo gallery possible a carosel on the home page</li>
-    <li>possibly a youtube channel for Steve to post video and stream them to the site</li>
-</ul>
+- implement a calendar
+- form to sign up for the news letters
+- added functionality for the admin
+    1. upload/store files (fliers and news letters)
+    2. possibly more text editing capabilities
+- validations for the database
+- photo gallery possible a carousel on the home page
+- possibly a youtube channel for Steve to post video and stream them to the site
 
 # Special Thanks!
 Goes out to <a href="https://github.com/jaderosse">Jade</a> and <a href="https://github.com/nnedevn">Nick</a> for work on the site in it's development. </br>
