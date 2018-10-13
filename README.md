@@ -1,7 +1,7 @@
 # SquareCall
 A portfolio for Stephen Noseck
 
-Stephen is a professional square dance caller from the greater Seattle area.
+Stephen is a professional square dance caller from the greater Seattle area. Here is his current <a href="http://stephennoseck.com/">site</a>
 
 # Tech Used
 - Python
@@ -25,9 +25,12 @@ When Steve and I sat down to talk about what he needed and wanted from the site,
 
 As of the time I am writing this, the site is still being worked on and scheduled deliverable is mid to late October.
 
+## Completed from Todo list
+- form to sign up for the news letters
+
+
 # Still to do
 - implement a calendar
-- form to sign up for the news letters
 - added functionality for the admin
     1. upload/store files (fliers and news letters)
     2. possibly more text editing capabilities
