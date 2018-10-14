@@ -216,6 +216,15 @@ section h1, h3, h4{
     margin-top: auto;
     margin-bottom: auto;
 }
+.cal-box{
+    text-align: center;
+}
+.cal-box :first-child{
+    margin-top: 5px;
+}
+.cal-box :last-child{
+    margin-bottom: 5px;
+}
 article{
     background-color: #a60e35;
     border: #6b2436a2 inset 2px;
