@@ -1,11 +1,5 @@
-/* 
-    #da3939 
-    https://coolors.co/232323-3d2645-a60e35-da4167-f0eff4
-    https://coolors.co/fff8f0-da3939-dd1c1c-cee9ff-a60e35
-*/
-
 body {
-    background-color: #d3d9e6b6;
+    background-color: white;
     background-image: url("./axiom-pattern.png");
     text-align: center;
     color: #313a32;
@@ -48,7 +42,7 @@ ul{
 @media screen and (min-width: 400px){
 	.wrapper{
 		grid-template-columns: 1% 98% 1%;
-        grid-template-rows: 75px auto auto 15px;
+        grid-template-rows: 95px auto auto 15px;
         row-gap: 5px;
     }
     .content{
@@ -67,7 +61,7 @@ ul{
 @media screen and (min-width: 767px){
 	.wrapper{
 		grid-template-columns: 12% 58% 18% 6% 6%;
-        grid-template-rows: 20px 20px auto 15px;
+        grid-template-rows: 30px 20px auto 15px;
         row-gap: 18px;
         column-gap: 10px;
     }
@@ -77,7 +71,7 @@ ul{
     }
     .side{
         grid-column: 3/4;
-        grid-row: 3/4;
+        grid-row: 2/4;
     }
     .cal-sec{
         display: grid;
@@ -87,7 +81,7 @@ ul{
 @media screen and (min-width: 1400px){
 	.wrapper{
 		grid-template-columns: 20% 39% 13% 12% 16%;
-        grid-template-rows: 20px 20px auto 15px;
+        grid-template-rows: 30px 20px auto 15px;
     }
     .content{
         grid-column: 2/3;
@@ -95,13 +89,13 @@ ul{
     }
     .side{
         grid-column: 3/5;
-        grid-row: 3/4;
+        grid-row: 2/4;
     }
 }
 @media screen and (min-width: 2000px){
 	.wrapper{
 		grid-template-columns: 20% 39% 13% 12% 16%;
-		grid-template-rows: 20px 20px auto 15px;
+		grid-template-rows: 30px 20px auto 15px;
     }
     .content{
         grid-column: 2/3;
@@ -109,12 +103,12 @@ ul{
     }
     .side{
         grid-column: 3/5;
-        grid-row: 3/4;
+        grid-row: 2/4;
     }
 }
 nav{
-    background-color: #a60e35;
-    border-bottom: rgba(116, 28, 53, 0.356) inset 2px;
+    background-color: #741C35;
+    border-bottom: #741c355b solid 2px;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -124,13 +118,17 @@ nav{
     text-align: center;
     z-index: 5;
 }
+nav ul{
+    margin: 4px;
+}
 nav li{
     display: inline-block;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 10px;
 }
 nav a:hover{
-    background-color: #741C35;
+    background-color: #a60e35;
     color:#fff8f0;
 }
 a{
@@ -138,7 +136,8 @@ a{
     color: #313a32;
 }
 nav a{
-    margin: 0 10px;
+    margin: 0;
+    padding: 0 10px;
     color: #fff8f0;
     font-size: 24px;
     font-weight: bolder;
@@ -157,7 +156,6 @@ nav a{
     color: #fff8f0;
 }
 .Stephen p:hover{
-    background-color: #741C35;
     color:#fff8f0;
 }
 .content p {
@@ -167,11 +165,14 @@ nav a{
     z-index: 1;
 }
 section{
-    border: 2px solid #741C35;
-    background-color: #9eacda15;
+    border: 2px solid #bdbdbd;
+    background-color: #fafafa;
     margin-top: 10px;
     text-align: left;
     overflow: auto;
+}
+.content div section:first-child{
+    margin-top: 10px;
 }
 form{
     margin: 10px;
@@ -198,8 +199,11 @@ section h1, h3, h4{
     border: none;
     margin: 0;
 }
+.side div:first-child{
+    margin-top: 10px;
+}
 .side div{
-    border: #6b2436a2 inset 2px;
+    border: #bdbdbd solid 2px;
 }
 .side p{
     margin: 3px 5px;
@@ -227,7 +231,7 @@ section h1, h3, h4{
 }
 article{
     background-color: #a60e35;
-    border: #6b2436a2 inset 2px;
+    border: #f3f3f3 solid 2px;
     border-left: none;
     border-bottom: none;
 }
