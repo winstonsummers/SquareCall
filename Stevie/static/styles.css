@@ -178,13 +178,19 @@ form{
     margin: 10px;
     text-align: left;
 }
+input[type=submit]{
+    background-color: #a60e35;
+    color: #fff8f0;
+    border-radius: 3px;
+}
 .sign-up-wrapper{
     display: grid;
     grid-template-columns: auto 1fr;
 }
 input{
-    width: 200px;
+    width: 250px;
     height: 25px;
+    font-size: 16px;
 }
 section h1, h3, h4{
     background-color: #a60e35;
@@ -231,7 +237,7 @@ section h1, h3, h4{
 }
 article{
     background-color: #a60e35;
-    border: #f3f3f3 solid 2px;
+    border: #bdbdbd solid 2px;
     border-left: none;
     border-bottom: none;
 }

@@ -6,18 +6,7 @@
     
 {% block content %}
     <div>
-        {% if post %}
-            {% for p in post %}
-                <section>
-                    <h1>{{ p.title }}</h1>
-                    <div class="text">
-                        <p>{{ p.text|linebreaks }}</p>
-                    </div>
-                </section>
-            {% endfor %}
-        {% else %}
-            <p style="display: none">There isn't anything here...</p>
-        {% endif %}
+        {% include './posts.html' %}
         <section>
             <h1>Sign Up</h1>
             <div class="sign-up-wrapper">
